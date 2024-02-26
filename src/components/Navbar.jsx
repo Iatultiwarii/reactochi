@@ -1,0 +1,16 @@
+import React from 'react'
+
+function Navbar() {
+  return (
+    <div className='w-full px-20 py-8 flex justify-between'>
+  <div className="logo "><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAaVBMVEUhISH09PT39/cAAAAeHh76+vobGxsVFRUYGBgMDAz+/v4RERHu7u7p6ena2trm5uaRkZEpKSl0dHTg4OA5OTlWVlbOzs6rq6t/f39BQUGfn59hYWGLi4tHR0fHx8e8vLxsbGwwMDBOTk6w7OLFAAAGL0lEQVR4nO1Z12KsIBBVioC997b+/0deRDcrFqLZ+8h5THbwTB8Gw9DQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0PiPQBZxGISQEQs9lKRECDoUPZRUw3KsqGvKNgzbsuleyKF3JQkxXtnIBcMyzlKDOP+LF4HRWOeBZ2Lbxqab5PWYQueGIIKwKwc/cLmgDcwgGcKMQes/UKJOUyT8TGCuAMC2vWF0fqUF07Y3bfwjaAJsgzys4LfWQjAdvA+hDzF3mNQ6E9j65omk6YeQfcWJRLVrHw4WwHaRXh+OWJNfCAI7iJ0vfMimHJ+fLGj5DbnwhIVCF18KAlxH5M+cRsXJwokhO2VFokGhDIftV390ISy9IycANnECzPAsx0nan1CSJHHe3cnfI6fY3B/NU9vz/cC03+ECQH20FY1ye0/Itt3AT7y5pqxHBX+xFYs9mdOccWVWvV7VNBbBSni21U7QioadMrxEhU2XvtIqa3N3tRe31e0S/Aap3B2noH5BZlkI8Y4DWdwvhwNzlFkhUsh2Am4/QkiEIIWwqoPFWrg/D8hrIKOX4gmYxbTNYwqtcLEkSCopv514Z6YgNraOgmxaI85uHzoQhjtOLdkmsVXVQ5b54jd4gNv/GIFkYZsX2a1BaDyEqF6dnz1yoBXJzgOxbGrCUz6wOn+xVbPRGNaS8/BgSBXJaTyMWxiuYbVV51ewQjZUK0ujyOd1KIOdsArO6Q9jmgWSoG/IxoCtbdo9hPVi5PGBA/nRW0PhYl+5Se2CHs5VQ6D8iXVWbAWBN+1y0+py4I4OgsL1eIjuxzqspaOTad8UEGrKF49vNsxng+GtME0lbXgVO+jbxY0zu9Gdf+A1t9sN944UUYdSNCe+MB6dFoO8Sw4rt24HeXpsvNaSMVQECChuRxXJZENV10niCFPZ5WIRZEg1CtfXn1y+Afzb/qNSPZBTfgcWrzkmzra6rfeAm15rg0guoiq76z8k9VNQKlKEdgmYFU4FKTK6kolVPRcK/+HyZqlCqRRSoFNMZCjK5996SxlkcoIUqoRn5awALm6Oe3SSnBCkSreL7uvGwgtMCik+bSnkSOOJXDDuBRVptqkH/JdKDAnjrN9fKsRPMCp7mzV5v5/+gRNL+ubKBLEEqSXPkNM/J6X2wxWpRG0pUcLtpd44uVSm7rgvUUXsJSnTrVSBvsTUOaljPd+SGr8hhVWtwFoy9dR9oFeRgrX5xH1k3HLiCiuKJ+9hIlMXT+1IuapohEvbvBvockngcle3O2OuTMKqa0mA8iQMymt16DJu3y4Ju+JpuuNlZX637tPiybvP9fLHaZeJ6m7x3LUZPplcuoEtXfK8zcwGvFLHShPxjdttZteQOa7cQF+Lo88b8hzq9EKddfQ0we0xnTQyKRCcX2cttAb2Z3QZ5OuVfVEVWLb8Dt8fXfZD3jytnbCy6BpCfOpdq4Y85Jliuj/5KmuSVfL+kLcbh2eN8+4gTdH7V+Bn4rLkcVjczY5rH9i8f/VgHOZj4e5sHsoNlLyPWDq8/7mJZ/niIFgVhuxCwtr36bh/cHHgE/RhReEVKb97r4z49bsMfnYVm/s3zbydIL+BlZCtAY8sB1afNdGjKxZPq90mYT7BLZoUUUoofU2h/9nr2Nkm4OBBHRMAv+wiOsOoxuGzy3l4Gd1f29evA78v6rAY8u3OEUvBaqG952datpcPRV0PfWJvznWfXdt5AvYnrEyAwYLNn/xUueB4W0tISvs9u326N+O9Sbla/HxtFxeHVdAVcK/oqRc4LM3OOZnhPqmPS7NzTnn3h2UsO64Xj5z4XHNnvXjCKVAsvBXgWf8Lq0eL2J2d9quP26xGU72yPuckVtYXm/0Vf19Zz8v9Xr3cv3qUslCrWu6DL5b7XGWjNi9oYVAotFU+gyQx+eopC8GoCE4fjPrstwej+PzBKAlvvcspQVlWJFh6WsO2N8TWryezV5vPT2sfSWybedg93VSf04Kvps6T5RESeEFexCm888SJGJzEIySYHyHdIOnbjP6XR8gZ83Nt1cTLc+0UGU+fa8v5uXbMqog+L+IqfPOw7awP208lNTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ01PgHAt5UETI0NGoAAAAASUVORK5CYII=" className='h-10 w-20'></img></div>
+  <div className="links flex gap-10 text-white">
+    {["Services","Our Work","About Us","Insights","Contacts"].map((item,index)=>(
+  <a key={index} className={`'font-light text-lg  ' ${index===4 &&'ml-32'}`}>{item}</a>
+    ))}
+  </div>
+    </div>
+  )
+}
+
+export default Navbar
